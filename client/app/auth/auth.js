@@ -24,7 +24,7 @@ angular.module('shortly.auth', [])
         $location.path('/links');
       })
       .catch(function (error) {
-        console.error(error);
+        console.error('error', error);
       });
   };
 });

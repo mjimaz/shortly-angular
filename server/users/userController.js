@@ -33,6 +33,7 @@ module.exports = {
   },
 
   signup: function (req, res, next) {
+
     var username = req.body.username;
     var password = req.body.password;
 
