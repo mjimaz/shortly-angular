@@ -10,7 +10,7 @@ angular.module('shortly.services', [])
       });
     },
     addOne: function (link) {
-      return $http.post('/api/links',link)
+      return $http.post('/api/links', link)
       .then( function (link) {
         return link;
       });
