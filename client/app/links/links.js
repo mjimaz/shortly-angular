@@ -5,6 +5,7 @@ angular.module('shortly.links', [])
   Links.getAll().then(function (links) {
     $scope.data.links = links;
   });
+  // $scope.authenticate = true;
   $scope.signout = function () {
     Auth.signout();
   };
