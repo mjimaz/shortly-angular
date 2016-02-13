@@ -1,15 +1,23 @@
-<div id='container'>
+<div id='container' ng-controller='LinksController'>
   <div class = 'navigation'>
     <ul>
       <li> 
-        <a href='#' class='index'> Links </a>
+        <a href='#/links' class='index'> Links </a>
       </li>
       <li>
-        <a href='#' class='create'> Shorten </a>
+        <a href='#/shorten' class='create'> Shorten </a>
       </li>
       <li>
         <a href='/logout' class='logout'> Logout </a>
       </li>
+    </ul>
+  </div>
+
+  <div class='info'>
+    <div></div>
+    
+    <ul>
+      <div ng-repeat='link in data.links'> {{link}} </div>
     </ul>
   </div>
 
